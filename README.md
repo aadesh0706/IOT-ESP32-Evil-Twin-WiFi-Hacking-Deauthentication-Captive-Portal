@@ -1,142 +1,152 @@
-[![Github issues](https://img.shields.io/github/issues/aadesh0706/IOT-ESP32-Evil-Twin-WiFi-Hacking-Deauthentication-Captive-Portal)](https://github.com/aadesh0706/IOT-ESP32-Evil-Twin-WiFi-Hacking-Deauthentication-Captive-Portal/issues)
-[![Github forks](https://img.shields.io/github/forks/aadesh0706/IOT-ESP32-Evil-Twin-WiFi-Hacking-Deauthentication-Captive-Portal)](https://github.com/aadesh0706/IOT-ESP32-Evil-Twin-WiFi-Hacking-Deauthentication-Captive-Portal/network/members)
-[![Github stars](https://img.shields.io/github/stars/aadesh0706/IOT-ESP32-Evil-Twin-WiFi-Hacking-Deauthentication-Captive-Portal)](https://github.com/aadesh0706/IOT-ESP32-Evil-Twin-WiFi-Hacking-Deauthentication-Captive-Portal/stargazers)
-[![Top language](https://img.shields.io/github/languages/top/aadesh0706/IOT-ESP32-Evil-Twin-WiFi-Hacking-Deauthentication-Captive-Portal)](https://github.com/aadesh0706/IOT-ESP32-Evil-Twin-WiFi-Hacking-Deauthentication-Captive-Portal)
+---
+
+[![Github Issues](https://img.shields.io/github/issues/aadesh0706/IOT-ESP32-Evil-Twin-WiFi-Hacking-Deauthentication-Captive-Portal)](https://github.com/aadesh0706/IOT-ESP32-Evil-Twin-WiFi-Hacking-Deauthentication-Captive-Portal/issues)
+[![Github Forks](https://img.shields.io/github/forks/aadesh0706/IOT-ESP32-Evil-Twin-WiFi-Hacking-Deauthentication-Captive-Portal)](https://github.com/aadesh0706/IOT-ESP32-Evil-Twin-WiFi-Hacking-Deauthentication-Captive-Portal/network/members)
+[![Github Stars](https://img.shields.io/github/stars/aadesh0706/IOT-ESP32-Evil-Twin-WiFi-Hacking-Deauthentication-Captive-Portal)](https://github.com/aadesh0706/IOT-ESP32-Evil-Twin-WiFi-Hacking-Deauthentication-Captive-Portal/stargazers)
+[![Top Language](https://img.shields.io/github/languages/top/aadesh0706/IOT-ESP32-Evil-Twin-WiFi-Hacking-Deauthentication-Captive-Portal)](https://github.com/aadesh0706/IOT-ESP32-Evil-Twin-WiFi-Hacking-Deauthentication-Captive-Portal)
 
 ---
 
-## 🧠 Tags
+## 🧠 Etiketler
 
-`ESP32` `IoT` `WiFi Hacking` `Deauthentication` `Captive Portal` `Microcontroller Security` `Arduino`
-
----
+`ESP32` `IoT` `WiFi Hacking` `Deauthentication` `Captive Portal` `Mikrodenetleyici Güvenliği` `Arduino`
 
 ---
 
-# 🚨 ESP32 Evil Twin WiFi Hacking | Deauthentication & Captive Portal 🚨
+---
 
-> **Disclaimer:** This project is for **educational purposes only**. Use it responsibly and legally. Unauthorized attacks on networks are illegal in most countries. 🌐🔒
+# 🚨 ESP32 Kötü İkiz WiFi Hacking | Deauthentication & Captive Portal 🚨
+
+> **Uyarı:** Bu proje sadece **eğitim amaçlıdır**. Sorumlulukla ve yasal olarak kullanın. Ağlar üzerinde yetkisiz saldırılar, çoğu ülkede yasaktır. 🌐🔒
 
 ---
 
-![Profile Views](https://komarev.com/ghpvc/?username=aadesh0706&color=blue)  
-*Active since*: `September 2024`
+![Profil Görüntülenmeleri](https://komarev.com/ghpvc/?username=aadesh0706\&color=blue)
+*Aktif: `Eylül 2024`*
 
-**Account From:** `September 2020`
-
----
-
-### 🎥 **Demo Video**
-
-Check out the demo of this project in action! 🎬  
-[![ESP32 Evil Twin WiFi Hacking](https://img.youtube.com/vi/AEb33trYEAY/0.jpg)](https://www.youtube.com/shorts/AEb33trYEAY)  
-Click the thumbnail or follow [this link](https://www.youtube.com/shorts/AEb33trYEAY) to watch.
+**Hesap Açılışı:** `Eylül 2020`
 
 ---
 
-### 🎯 **Project Overview**
+### 🎥 **Demo Videosu**
 
-This repository demonstrates how to execute an **Evil Twin WiFi Hacking** attack using an **ESP32** module. The attack forces users off their legitimate network by sending **deauthentication packets** and lures them into connecting to a fake access point where a **captive portal** captures their WiFi credentials. 
-
-The project leverages **HTML**, **CSS**, and **JavaScript** to build a custom front-end for the captive portal, making it look like a legitimate login page.
-
----
-
-## 🚀 **Features**
-- 🛑 **Deauthentication Attack**: Disconnects devices from their current WiFi network.
-- 🌐 **Captive Portal**: A fake login page where users unknowingly enter their WiFi credentials.
-- 🎨 **Custom Frontend**: Built using **HTML**, **CSS**, and **JavaScript** for user interaction.
-- 📡 **ESP32 Integration**: WiFi hacking on a powerful yet affordable ESP32 module.
+Bu projenin aksiyon halindeki demosuna göz atın! 🎬
+[![ESP32 Kötü İkiz WiFi Hacking](https://img.youtube.com/vi/AEb33trYEAY/0.jpg)](https://www.youtube.com/shorts/AEb33trYEAY)
+Küçük resmi tıklayarak veya [bu bağlantıyı](https://www.youtube.com/shorts/AEb33trYEAY) takip ederek izleyebilirsiniz.
 
 ---
 
-## 🛠️ **Setup and Installation**
+### 🎯 **Proje Genel Bakış**
 
-### 1️⃣ **Clone the Repository**
+Bu depo, **ESP32** modülünü kullanarak **Kötü İkiz WiFi Hacking** saldırısı nasıl yapılır, bunu gösteriyor. Saldırı, kullanıcıları orijinal ağlarından çıkararak, onları sahte bir erişim noktasına bağlar ve burada **captiv portal** ile WiFi şifrelerini toplar.
+
+Proje, **HTML**, **CSS** ve **JavaScript** kullanarak captive portal için özel bir ön yüz oluşturur, böylece gerçek bir giriş sayfası gibi görünmesini sağlar.
+
+---
+
+## 🚀 **Özellikler**
+
+* 🛑 **Deauthentication Saldırısı**: Cihazları mevcut WiFi ağlarından ayırır.
+* 🌐 **Captive Portal**: Kullanıcıların istemeden WiFi şifrelerini girdiği sahte giriş sayfası.
+* 🎨 **Özel Ön Yüz**: Kullanıcı etkileşimi için **HTML**, **CSS** ve **JavaScript** kullanılarak yapılmıştır.
+* 📡 **ESP32 Entegrasyonu**: Güçlü ve uygun fiyatlı ESP32 modülüyle WiFi hacking.
+
+---
+
+## 🛠️ **Kurulum ve Yükleme**
+
+### 1️⃣ **Depoyu Klonlayın**
+
 ```bash
 git clone https://github.com/aadesh0706/IOT-ESP32-Evil-Twin-WiFi-Hacking-Deauthentication-Captive-Portal.git
 cd IOT-ESP32-Evil-Twin-WiFi-Hacking-Deauthentication-Captive-Portal
 ```
 
-### 2️⃣ **Install Required Libraries**
+### 2️⃣ **Gerekli Kütüphaneleri Yükleyin**
 
-Make sure you have the necessary libraries and tools installed to program the ESP32:
+ESP32'yi programlamak için gerekli olan kütüphanelerin ve araçların yüklü olduğundan emin olun:
 
-- **ESP32 Core for Arduino**: [Install Guide](https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html)
+* **ESP32 Arduino Çekirdek Kitaplığı**: [Kurulum Kılavuzu](https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html)
 
-### 3️⃣ **Upload the Code to ESP32**
-1. Open the `esp32_deauth_attack.ino` file in your Arduino IDE.
-2. Connect your ESP32 to your computer via USB.
-3. Select your ESP32 board from the Tools > Board menu.
-4. Click **Upload**.
+### 3️⃣ **Kodu ESP32'ye Yükleyin**
 
-### 4️⃣ **Customize the Captive Portal**
-- The captive portal files are located in the `html/` folder. 🎨
-- You can easily edit the design using **HTML**, **CSS**, and **JavaScript** to match your desired look and feel.
+1. `esp32_deauth_attack.ino` dosyasını Arduino IDE'nizde açın.
+2. ESP32'nizi USB aracılığıyla bilgisayarınıza bağlayın.
+3. Araçlar > Kart menüsünden ESP32 kartını seçin.
+4. **Yükle** butonuna tıklayın.
 
----
+### 4️⃣ **Captive Portal'ı Özelleştirin**
 
-## ⚡ **How to Run the Attack**
-
-1. **Launch the Deauthentication Attack**: 📶 Force devices off the legitimate WiFi network.
-2. **Start the Fake AP**: 🖧 Broadcast your rogue access point.
-3. **Use the Captive Portal**: 🌐 When users attempt to reconnect, they are directed to a fake login page.
-4. **Capture WiFi Credentials**: 🔐 Credentials entered by users are logged on the ESP32.
+* Captive portal dosyaları `html/` klasöründe yer almaktadır. 🎨
+* Tasarımı, **HTML**, **CSS** ve **JavaScript** kullanarak istediğiniz gibi kolayca düzenleyebilirsiniz.
 
 ---
 
-## 📂 **Files Included**
-- `esp32_deauth_attack.ino`: The main code for the deauthentication attack.
-- `html/`: Contains all the files for the captive portal (HTML, CSS, JavaScript).
-- `README.md`: Overview, setup instructions, and usage information.
+## ⚡ **Saldırıyı Çalıştırma**
+
+1. **Deauthentication Saldırısını Başlatın**: 📶 Cihazları orijinal WiFi ağından ayırın.
+2. **Sahte AP'yi Başlatın**: 🖧 Sahte bir erişim noktası yayınlayın.
+3. **Captive Portal Kullanımı**: 🌐 Kullanıcılar yeniden bağlanmaya çalıştığında, onları sahte bir giriş sayfasına yönlendirin.
+4. **WiFi Şifrelerini Yakalama**: 🔐 Kullanıcılar tarafından girilen şifreler ESP32'de kaydedilir.
 
 ---
 
-## 🔗 **How It Works**
+## 📂 **Dahil Edilen Dosyalar**
 
-1. **Deauthentication Attack**: The ESP32 sends deauth packets to disconnect devices from their original network.
-2. **Rogue Access Point**: After being disconnected, the ESP32 broadcasts a rogue AP with a similar name (SSID) to the legitimate one.
-3. **Captive Portal**: When users attempt to connect to the rogue AP, they are redirected to a fake login page asking for WiFi credentials.
-4. **Credentials Logged**: Any credentials entered are captured and stored on the ESP32.
-
----
-
-## 💻 **Technologies Used**
-- **ESP32**: Low-cost WiFi module.
-- **HTML**: Structure for the captive portal.
-- **CSS**: Styling for a user-friendly portal interface.
-- **JavaScript**: Handles user interactions and form submissions.
+* `esp32_deauth_attack.ino`: Deauthentication saldırısının ana kodu.
+* `html/`: Captive portal için gerekli tüm dosyalar (HTML, CSS, JavaScript).
+* `README.md`: Genel bakış, kurulum talimatları ve kullanım bilgileri.
 
 ---
 
-## 🚧 **Future Improvements**
-- 🔒 Add encryption to securely transmit credentials.
-- 📊 Create a log file to store captured credentials.
-- 🔧 Improve the accuracy of deauthentication attacks.
+## 🔗 **Nasıl Çalışır**
+
+1. **Deauthentication Saldırısı**: ESP32, cihazları orijinal ağlarından ayırmak için deauth paketleri gönderir.
+2. **Sahte Erişim Noktası**: Cihazlar bağlantıyı kaybettikten sonra, ESP32, gerçek ağla benzer bir SSID'ye sahip sahte bir AP yayınlar.
+3. **Captive Portal**: Kullanıcılar sahte AP'ye bağlanmaya çalıştığında, onları şifre girmeleri için sahte bir giriş sayfasına yönlendirir.
+4. **Şifreler Kaydedilir**: Kullanıcıların girdiği şifreler ESP32 üzerinde kaydedilir.
 
 ---
 
-## 👨‍💻 **Contributing**
+## 💻 **Kullanılan Teknolojiler**
 
-Want to improve this project? Feel free to fork the repository, make changes, and submit a pull request. Contributions are always welcome! 🛠️
-
----
-
-## 📝 **License**
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details. 📜
+* **ESP32**: Düşük maliyetli WiFi modülü.
+* **HTML**: Captive portal için yapı.
+* **CSS**: Kullanıcı dostu portal arayüzü için stil.
+* **JavaScript**: Kullanıcı etkileşimlerini ve form gönderimlerini işler.
 
 ---
 
-## ⚠️ **Disclaimer**
+## 🚧 **Gelecek İyileştirmeler**
 
-This project is intended for **educational and ethical testing purposes** only. **Do not** use this code to target any WiFi network without explicit permission from the network owner. Always comply with local laws and regulations.
+* 🔒 Şifrelerin güvenli bir şekilde iletilmesi için şifreleme eklemek.
+* 📊 Yakalanan şifreleri depolamak için bir log dosyası oluşturmak.
+* 🔧 Deauthentication saldırılarının doğruluğunu artırmak.
 
 ---
 
-### 📦 **Repository Tags**
+## 👨‍💻 **Katkıda Bulunma**
+
+Bu projeyi geliştirmek ister misiniz? Depoyu çatallayarak, değişiklik yaparak ve bir pull request göndererek katkıda bulunabilirsiniz. Katkılar her zaman hoş karşılanır! 🛠️
+
+---
+
+## 📝 **Lisans**
+
+Bu proje MIT Lisansı altında lisanslanmıştır. Detaylar için [LICENSE](LICENSE) dosyasına bakabilirsiniz. 📜
+
+---
+
+## ⚠️ **Uyarı**
+
+Bu proje sadece **eğitim ve etik test amaçlıdır**. **Bu kodu** herhangi bir WiFi ağına hedef almak için **ağ sahibi tarafından açıkça izin verilmediği sürece** kullanmayın. Her zaman yerel yasa ve yönetmeliklere uyun.
+
+---
+
+### 📦 **Depo Etiketleri**
+
 ```
-ESP32, Evil Twin, WiFi Hacking, Deauthentication, Captive Portal, HTML, CSS, JavaScript, Cybersecurity, Ethical Hacking, ESP32 WiFi, IoT, WiFi Pentesting
+ESP32, Evil Twin, WiFi Hacking, Deauthentication, Captive Portal, HTML, CSS, JavaScript, Siber Güvenlik, Etik Hacking, ESP32 WiFi, IoT, WiFi Pentesting
 ```
 
 ---
