@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="360" viewBox="0 0 800 360">
+  <style>
+    .bg { fill:#f8fafc }
+    .box { fill:#fff; stroke:#e2e8f0; }
+    .ssid { font-family: Arial, sans-serif; font-size:18px; fill:#0f172a }
+    .muted { font-family: Arial, sans-serif; font-size:13px; fill:#64748b }
+  </style>
+  <rect width="100%" height="100%" class="bg"/>
+  <rect x="40" y="30" width="720" height="280" class="box" rx="8"/>
+  <text x="60" y="64" class="ssid">Available Wi‑Fi networks</text>
+  <text x="60" y="96" class="ssid">WiPhi_34732</text>
+  <text x="60" y="126" class="muted">Secured • Strong signal</text>
+  <text x="60" y="156" class="ssid">MyHomeNetwork</text>
+  <text x="60" y="186" class="muted">Secured • Medium</text>
+  <text x="60" y="216" class="ssid">CoffeeShopFree_WiFi</text>
+  <text x="60" y="246" class="muted">Open • Weak</text>
+  <rect x="600" y="110" width="120" height="40" rx="6" fill="#2563eb"/>
+  <text x="660" y="137" text-anchor="middle" class="ssid" fill="#fff">Connect</text>
+</svg>

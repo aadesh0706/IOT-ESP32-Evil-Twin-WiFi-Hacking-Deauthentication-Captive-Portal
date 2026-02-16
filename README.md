@@ -1,142 +1,157 @@
-[![Github issues](https://img.shields.io/github/issues/aadesh0706/IOT-ESP32-Evil-Twin-WiFi-Hacking-Deauthentication-Captive-Portal)](https://github.com/aadesh0706/IOT-ESP32-Evil-Twin-WiFi-Hacking-Deauthentication-Captive-Portal/issues)
-[![Github forks](https://img.shields.io/github/forks/aadesh0706/IOT-ESP32-Evil-Twin-WiFi-Hacking-Deauthentication-Captive-Portal)](https://github.com/aadesh0706/IOT-ESP32-Evil-Twin-WiFi-Hacking-Deauthentication-Captive-Portal/network/members)
-[![Github stars](https://img.shields.io/github/stars/aadesh0706/IOT-ESP32-Evil-Twin-WiFi-Hacking-Deauthentication-Captive-Portal)](https://github.com/aadesh0706/IOT-ESP32-Evil-Twin-WiFi-Hacking-Deauthentication-Captive-Portal/stargazers)
-[![Top language](https://img.shields.io/github/languages/top/aadesh0706/IOT-ESP32-Evil-Twin-WiFi-Hacking-Deauthentication-Captive-Portal)](https://github.com/aadesh0706/IOT-ESP32-Evil-Twin-WiFi-Hacking-Deauthentication-Captive-Portal)
+# ESP32 Captive Portal — PlatformIO (Clean Guide)
 
----
+Ringkasan singkat
+- Firmware Arduino untuk ESP32 yang menyediakan captive-portal, scanning, dan utility lainnya. Proyek ini sudah diadaptasi untuk PlatformIO—kode utama ada di `src/NetworkDeAuth.ino`.
 
-## 🧠 Tags
+Files penting
+- `platformio.ini` — konfigurasi PlatformIO.
+- `src/NetworkDeAuth.ino` — firmware utama.
+- `scripts/` — helper PowerShell: `upload.ps1`, `upload_and_monitor.ps1`.
 
-`ESP32` `IoT` `WiFi Hacking` `Deauthentication` `Captive Portal` `Microcontroller Security` `Arduino`
+Persiapan singkat (Windows)
+1. Pastikan Python 3 terpasang: `py -3 --version`.
+2. Install PlatformIO (pilih salah satu):
+   - Cepat: `py -3 -m pip install --user platformio` lalu `py -3 -m platformio --version`.
+   - Rekomendasi: `py -3 -m pip install --user pipx` lalu `pipx install platformio`.
 
----
+Build / Upload / Monitor
+```powershell
+# compile
+py -3 -m platformio run -e esp32dev
 
----
+# upload (ganti COM sesuai perangkat Anda atau tekan Enter pada script untuk auto-detect)
+py -3 -m platformio run -e esp32dev -t upload --upload-port COM5
 
-# 🚨 ESP32 Evil Twin WiFi Hacking | Deauthentication & Captive Portal 🚨
-
-> **Disclaimer:** This project is for **educational purposes only**. Use it responsibly and legally. Unauthorized attacks on networks are illegal in most countries. 🌐🔒
-
----
-
-![Profile Views](https://komarev.com/ghpvc/?username=aadesh0706&color=blue)  
-*Active since*: `September 2024`
-
-**Account From:** `September 2020`
-
----
-
-### 🎥 **Demo Video**
-
-Check out the demo of this project in action! 🎬  
-[![ESP32 Evil Twin WiFi Hacking](https://img.youtube.com/vi/AEb33trYEAY/0.jpg)](https://www.youtube.com/shorts/AEb33trYEAY)  
-Click the thumbnail or follow [this link](https://www.youtube.com/shorts/AEb33trYEAY) to watch.
-
----
-
-### 🎯 **Project Overview**
-
-This repository demonstrates how to execute an **Evil Twin WiFi Hacking** attack using an **ESP32** module. The attack forces users off their legitimate network by sending **deauthentication packets** and lures them into connecting to a fake access point where a **captive portal** captures their WiFi credentials. 
-
-The project leverages **HTML**, **CSS**, and **JavaScript** to build a custom front-end for the captive portal, making it look like a legitimate login page.
-
----
-
-## 🚀 **Features**
-- 🛑 **Deauthentication Attack**: Disconnects devices from their current WiFi network.
-- 🌐 **Captive Portal**: A fake login page where users unknowingly enter their WiFi credentials.
-- 🎨 **Custom Frontend**: Built using **HTML**, **CSS**, and **JavaScript** for user interaction.
-- 📡 **ESP32 Integration**: WiFi hacking on a powerful yet affordable ESP32 module.
-
----
-
-## 🛠️ **Setup and Installation**
-
-### 1️⃣ **Clone the Repository**
-```bash
-git clone https://github.com/aadesh0706/IOT-ESP32-Evil-Twin-WiFi-Hacking-Deauthentication-Captive-Portal.git
-cd IOT-ESP32-Evil-Twin-WiFi-Hacking-Deauthentication-Captive-Portal
+# serial monitor
+py -3 -m platformio device monitor -b 115200
 ```
 
-### 2️⃣ **Install Required Libraries**
+Quick helpers
+- `.\scripts\upload.ps1` — prompt untuk port (atau tekan Enter untuk auto-detect) dan upload.
+- `.\scripts\upload_and_monitor.ps1` — upload lalu buka serial monitor.
 
-Make sure you have the necessary libraries and tools installed to program the ESP32:
+Cara mengakses captive portal
+1. Sambungkan perangkat ke SSID ESP32 (default: `WiPhi_34732`, password: `d347h320`).
+2. Buka browser ke `http://192.168.4.1` (paksa HTTP dengan `http://neverssl.com` jika browser mencoba HTTPS otomatis).
 
-- **ESP32 Core for Arduino**: [Install Guide](https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html)
-
-### 3️⃣ **Upload the Code to ESP32**
-1. Open the `esp32_deauth_attack.ino` file in your Arduino IDE.
-2. Connect your ESP32 to your computer via USB.
-3. Select your ESP32 board from the Tools > Board menu.
-4. Click **Upload**.
-
-### 4️⃣ **Customize the Captive Portal**
-- The captive portal files are located in the `html/` folder. 🎨
-- You can easily edit the design using **HTML**, **CSS**, and **JavaScript** to match your desired look and feel.
-
----
-
-## ⚡ **How to Run the Attack**
-
-1. **Launch the Deauthentication Attack**: 📶 Force devices off the legitimate WiFi network.
-2. **Start the Fake AP**: 🖧 Broadcast your rogue access point.
-3. **Use the Captive Portal**: 🌐 When users attempt to reconnect, they are directed to a fake login page.
-4. **Capture WiFi Credentials**: 🔐 Credentials entered by users are logged on the ESP32.
-
----
-
-## 📂 **Files Included**
-- `esp32_deauth_attack.ino`: The main code for the deauthentication attack.
-- `html/`: Contains all the files for the captive portal (HTML, CSS, JavaScript).
-- `README.md`: Overview, setup instructions, and usage information.
-
----
-
-## 🔗 **How It Works**
-
-1. **Deauthentication Attack**: The ESP32 sends deauth packets to disconnect devices from their original network.
-2. **Rogue Access Point**: After being disconnected, the ESP32 broadcasts a rogue AP with a similar name (SSID) to the legitimate one.
-3. **Captive Portal**: When users attempt to connect to the rogue AP, they are redirected to a fake login page asking for WiFi credentials.
-4. **Credentials Logged**: Any credentials entered are captured and stored on the ESP32.
-
----
-
-## 💻 **Technologies Used**
-- **ESP32**: Low-cost WiFi module.
-- **HTML**: Structure for the captive portal.
-- **CSS**: Styling for a user-friendly portal interface.
-- **JavaScript**: Handles user interactions and form submissions.
-
----
-
-## 🚧 **Future Improvements**
-- 🔒 Add encryption to securely transmit credentials.
-- 📊 Create a log file to store captured credentials.
-- 🔧 Improve the accuracy of deauthentication attacks.
-
----
-
-## 👨‍💻 **Contributing**
-
-Want to improve this project? Feel free to fork the repository, make changes, and submit a pull request. Contributions are always welcome! 🛠️
-
----
-
-## 📝 **License**
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details. 📜
-
----
-
-## ⚠️ **Disclaimer**
-
-This project is intended for **educational and ethical testing purposes** only. **Do not** use this code to target any WiFi network without explicit permission from the network owner. Always comply with local laws and regulations.
-
----
-
-### 📦 **Repository Tags**
+Contoh output serial (debugging)
 ```
-ESP32, Evil Twin, WiFi Hacking, Deauthentication, Captive Portal, HTML, CSS, JavaScript, Cybersecurity, Ethical Hacking, ESP32 WiFi, IoT, WiFi Pentesting
+SoftAP started: WiPhi_34732
+SoftAP IP: 192.168.4.1
+DNS server started
+Stations connected: 1
+HTTP GET / or POST / (handleIndex)
+GOOD
 ```
 
+## Cara Kerja (Diagram alur)
+Gunakan diagram Mermaid ini (GitHub mendukung Mermaid di README):
+
+```mermaid
+flowchart TD
+  A[Start device] --> B[Perform WiFi scan]
+  B --> C{Select target AP}
+  C -->|Selected| D[Start deauthentication loop]
+  D --> E[Start EvilTwin softAP]
+  E --> F[DNS redirect to captive portal]
+  F --> G[Client connects to EvilTwin]
+  G --> H[Serve captive portal page]
+  H --> I[User submits password]
+  I --> J[Attempt connect to selected AP using password]
+  J --> K{Connection result}
+  K -->|Success| L[Save password, stop hotspot]
+  K -->|Fail| M[Show error, optionally continue deauth]
+  L --> N[End]
+  M --> D
+```
+
+## Tampilan contoh / Mockup
+
+Halaman captive-portal (mockup teks):
+
+```
++-----------------------------------------------------------+
+| ⚠ Firmware Update Failed                                   |
+| Your router encountered a problem...                        |
+|                                                             |
+| WiFi password: [__________] [Continue]                     |
++-----------------------------------------------------------+
+```
+
+Halaman admin (mockup tabel):
+
+```
++-----------------------------------------------------------------------+
+| SSID             | BSSID              | Channel | Action               |
+|----------------------------------------------------------|-----------|
+| MyHomeNetwork     | AA:BB:CC:DD:EE:FF  | 6       | [Select]             |
+| CoffeeShopFree_WiFi| 11:22:33:44:55:66  | 11      | [Selected]           |
++-----------------------------------------------------------------------+
+```
+
+### Screenshots langkah demi langkah
+
+1) Output upload (PlatformIO)
+
+![Upload output](assets/upload_output.svg)
+
+2) Sambungkan ke SSID `WiPhi_34732` (contoh daftar Wi‑Fi)
+
+![WiFi list](assets/wifi_list.svg)
+
+3) Buka browser ke `http://192.168.4.1` — captive portal
+
+![Browser captive portal](assets/browser_portal.svg)
+
+4) Setelah submit: halaman verifikasi (redirect ke `/result`)
+
+![Submit page](assets/portal_submit.svg)
+
+5) Hasil sukses (contoh tampilan hasil)
+
+![Result page](assets/result_page.svg)
+
+6) Output serial monitor yang relevan
+
+![Serial monitor](assets/serial_monitor.svg)
+
+Diagram flowchart telah dirender dan disimpan di `assets/flowchart.svg` — tampilan disematkan di bawah.
+
+
+![Flowchart](assets/flowchart.svg)
+
+Preview animasi alur (animated SVG):
+
+![Preview flow](assets/preview_flow.svg)
+
+
+## Aturan Penggunaan (penting)
+- Lakukan pengujian hanya pada perangkat atau jaringan yang Anda miliki atau jika Anda memiliki izin tertulis dari pemilik.
+- Jangan menyimpan, menyebarkan, atau mengeksfiltrasi kredensial/data sensitif tanpa izin eksplisit.
+- Gunakan lingkungan lab/isolated testbed saat menguji fitur deauthentication atau captive-portal.
+- Patuhi hukum dan kebijakan lokal.
+- Laporkan kerentanan secara bertanggung jawab (responsible disclosure).
+
 ---
+
+Butuh bantuan lain?
+- Saya bisa menambahkan `upload_port` default di `platformio.ini`, menambahkan `assets/` dengan gambar diagram, atau membuat skrip untuk Linux/macOS.
+
+Render animated preview (GIF)
+Prerequisites: Node.js (npm), `ffmpeg` in PATH.
+
+1. Install puppeteer (if you didn't):
+
+```powershell
+npm install puppeteer --no-save
+```
+
+2. Run the PowerShell helper to produce GIF (default 8s, 15 fps):
+
+```powershell
+.\scripts\export_preview.ps1
+```
+
+Output: `assets/preview_flow.gif` (and temporary frames in `./tmp_preview_frames`).
+
+If you prefer a Linux/macOS script I can add one too.

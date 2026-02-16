@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" viewBox="0 0 1000 420">
+  <style>
+    .bg { fill:#eef2ff }
+    .window { fill:#fff; stroke:#c7d2fe }
+    .addr { font-family: Arial, sans-serif; font-size:14px; fill:#4b5563 }
+    .heading { font-family: Arial, sans-serif; font-size:24px; fill:#b45309 }
+    .text { font-family: Arial, sans-serif; font-size:16px; fill:#374151 }
+    .input { fill:#fff; stroke:#9ca3af; rx:6 }
+    .button { fill:#065f46; rx:6 }
+  </style>
+  <rect width="100%" height="100%" class="bg"/>
+  <rect x="40" y="24" width="920" height="360" class="window" rx="8"/>
+  <text x="60" y="52" class="addr">http://192.168.4.1</text>
+  <text x="60" y="110" class="heading">⚠ Firmware Update Failed</text>
+  <text x="60" y="150" class="text">Your router encountered a problem while automatically installing the latest firmware update.</text>
+  <text x="60" y="210" class="text">WiFi password:</text>
+  <rect x="60" y="220" width="520" height="44" class="input"/>
+  <rect x="600" y="220" width="120" height="44" class="button"/>
+  <text x="660" y="250" text-anchor="middle" fill="#fff" font-family="Arial" font-size="16">Continue</text>
+</svg>
