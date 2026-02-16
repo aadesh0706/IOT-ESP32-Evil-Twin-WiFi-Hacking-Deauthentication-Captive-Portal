@@ -134,9 +134,6 @@ Preview animasi alur (animated SVG):
 
 ---
 
-Butuh bantuan lain?
-- Saya bisa menambahkan `upload_port` default di `platformio.ini`, menambahkan `assets/` dengan gambar diagram, atau membuat skrip untuk Linux/macOS.
-
 Render animated preview (GIF)
 Prerequisites: Node.js (npm), `ffmpeg` in PATH.
 
@@ -154,4 +151,3 @@ npm install puppeteer --no-save
 
 Output: `assets/preview_flow.gif` (and temporary frames in `./tmp_preview_frames`).
 
-If you prefer a Linux/macOS script I can add one too.
