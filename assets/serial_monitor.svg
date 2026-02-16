@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="260" viewBox="0 0 1000 260">
+  <style>
+    .bg { fill:#0b1220 }
+    .text { font-family: Consolas, monospace; font-size:14px; fill:#9ae6b4 }
+    .title { font-family: Arial, sans-serif; font-size:18px; fill:#fff }
+  </style>
+  <rect width="100%" height="100%" class="bg" rx="6"/>
+  <text x="20" y="30" class="title">Serial Monitor (115200)</text>
+  <text x="20" y="60" class="text">SoftAP started: WiPhi_34732</text>
+  <text x="20" y="80" class="text">SoftAP IP: 192.168.4.1</text>
+  <text x="20" y="100" class="text">DNS server started</text>
+  <text x="20" y="120" class="text">Stations connected: 1</text>
+  <text x="20" y="140" class="text">HTTP GET / or POST / (handleIndex)</text>
+  <text x="20" y="160" class="text">GOOD</text>
+</svg>

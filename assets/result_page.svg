@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="260" viewBox="0 0 900 260">
+  <style>
+    .bg { fill:#f8fafc }
+    .card { fill:#fff; stroke:#c7d2fe }
+    .ok { font-family: Arial, sans-serif; font-size:20px; fill:#065f46 }
+    .fail { font-family: Arial, sans-serif; font-size:20px; fill:#b91c1c }
+  </style>
+  <rect width="100%" height="100%" class="bg"/>
+  <rect x="40" y="30" width="820" height="180" class="card" rx="8"/>
+  <text x="80" y="90" class="ok">Success — Connected to target AP</text>
+  <text x="80" y="130" class="ok">Captured password: •••••••• (example)</text>
+  <text x="80" y="170" class="ok">EvilTwin stopped; DNS restored.</text>
+</svg>

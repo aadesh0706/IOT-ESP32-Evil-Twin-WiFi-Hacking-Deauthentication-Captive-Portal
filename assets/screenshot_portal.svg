@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="640" viewBox="0 0 1000 640">
+  <style>
+    .bg { fill: #f3f4f6 }
+    .window { fill: white; stroke: #d1d5db; stroke-width: 1 }
+    .bar { fill: #111827 }
+    .dot { r: 6; fill: #f87171 }
+    .title { font-family: Arial, Helvetica, sans-serif; font-size: 18px; fill: #111827 }
+    .heading { font-family: Arial, Helvetica, sans-serif; font-size: 28px; fill: #f59e0b }
+    .text { font-family: Arial, Helvetica, sans-serif; font-size: 16px; fill: #374151 }
+    .input { fill: #fff; stroke: #9ca3af; stroke-width: 1; rx: 6 }
+    .button { fill: #2563eb; rx: 6 }
+    .buttonText { font-family: Arial, Helvetica, sans-serif; font-size: 16px; fill: #fff }
+  </style>
+
+  <rect width="100%" height="100%" class="bg"/>
+
+  <!-- browser window -->
+  <g transform="translate(60,40)">
+    <rect width="880" height="540" class="window" rx="8"/>
+    <rect x="0" y="0" width="880" height="36" fill="#111827" rx="8 8 0 0"/>
+    <!-- window controls -->
+    <circle cx="18" cy="18" r="6" fill="#ef4444"/>
+    <circle cx="38" cy="18" r="6" fill="#f59e0b"/>
+    <circle cx="58" cy="18" r="6" fill="#34d399"/>
+
+    <text x="80" y="24" class="title">http://192.168.4.1 — Captive Portal</text>
+
+    <!-- content area -->
+    <g transform="translate(40,80)">
+      <rect width="760" height="420" rx="6" fill="#ffffff" stroke="#e5e7eb"/>
+
+      <!-- header -->
+      <text x="36" y="60" class="heading">⚠ Firmware Update Failed</text>
+      <text x="36" y="96" class="text">Your router encountered a problem while installing the latest firmware update.</text>
+
+      <!-- form -->
+      <text x="36" y="170" class="text">WiFi password:</text>
+      <rect x="36" y="180" width="520" height="44" class="input"/>
+      <text x="46" y="210" class="text" fill="#9ca3af">••••••••</text>
+
+      <!-- button -->
+      <g transform="translate(580,180)">
+        <rect width="120" height="44" class="button"/>
+        <text x="60" y="30" text-anchor="middle" class="buttonText">Continue</text>
+      </g>
+
+      <!-- footer small -->
+      <text x="36" y="360" class="text" fill="#6b7280">Captured demo page — for testing only.</text>
+    </g>
+  </g>
+</svg>

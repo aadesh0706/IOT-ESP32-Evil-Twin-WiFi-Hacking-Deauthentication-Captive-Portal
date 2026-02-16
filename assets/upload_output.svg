@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="220" viewBox="0 0 1000 220">
+  <style>
+    .bg { fill:#0b1220 }
+    .text { font-family: Consolas, monospace; font-size:14px; fill:#9ae6b4 }
+    .title { font-family: Arial, sans-serif; font-size:18px; fill:#fff }
+  </style>
+  <rect width="100%" height="100%" class="bg" rx="6"/>
+  <text x="20" y="30" class="title">PlatformIO — Upload output</text>
+  <text x="20" y="60" class="text">Processing esp32dev (platform: espressif32; board: esp32dev; framework: arduino)</text>
+  <text x="20" y="80" class="text">Building in release mode</text>
+  <text x="20" y="100" class="text">Compiling .pio\\build\\esp32dev\\src\\NetworkDeAuth.ino.cpp.o</text>
+  <text x="20" y="120" class="text">Generating binary and uploading to COM5 (auto-reset)</text>
+  <text x="20" y="140" class="text">esptool.py v4.9.0</text>
+  <text x="20" y="160" class="text">Uploading (100%) — Success</text>
+  <text x="20" y="180" class="text">Please open serial monitor: py -3 -m platformio device monitor -b 115200</text>
+</svg>

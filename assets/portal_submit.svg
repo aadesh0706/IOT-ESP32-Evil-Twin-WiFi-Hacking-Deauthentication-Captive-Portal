@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300">
+  <style>
+    .bg { fill:#fff7ed }
+    .card { fill:#fff; stroke:#fde68a }
+    .text { font-family: Arial, sans-serif; font-size:16px; fill:#7c2d12 }
+    .small { font-family: Arial, sans-serif; font-size:13px; fill:#92400e }
+  </style>
+  <rect width="100%" height="100%" class="bg"/>
+  <rect x="40" y="30" width="820" height="220" class="card" rx="8"/>
+  <text x="80" y="90" class="text">Verifying integrity, please wait...</text>
+  <rect x="80" y="110" width="720" height="18" fill="#f3f4f6" rx="9"/>
+  <rect x="80" y="110" width="72" height="18" fill="#f59e0b" rx="9"/>
+  <text x="80" y="170" class="small">This page will redirect to /result in ~15s</text>
+</svg>
